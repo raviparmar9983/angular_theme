@@ -1,0 +1,14 @@
+.scrollable-tabs {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 35px;
+}
+
+.scrollable-tabs .nav-tabs {
+  flex-wrap: nowrap;
+}
+
+.scrollable-tabs::-webkit-scrollbar {
+  height: 8px;
+}

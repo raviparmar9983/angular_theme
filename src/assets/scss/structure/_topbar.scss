@@ -1,0 +1,23 @@
+#page-topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: $sidebar-width;
+  height: $header-height;
+  background-color: $header-bg;
+  border: 1px solid $sidebar-border-color;
+  transition: left $transition-speed ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  i {
+    font-size: 20px;
+    color: $sidebar-menu-item-color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #page-topbar {
+    left: $sidebar-collapsed-width;
+  }
+}

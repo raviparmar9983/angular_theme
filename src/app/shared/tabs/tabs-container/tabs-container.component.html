@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="scrollable-tabs">
+    <ul ngbNav class="nav nav-tabs nav-tabs-custom nav-justified h-100">
+      <li
+        *ngFor="let tab of tabs"
+        [ngbNavItem]="tab"
+        [ngClass]="tab.active ? 'active' : ''"
+        (click)="onSelectTab(tab)"
+      >
+        <!-- <span class="d-block d-sm-none">
+          <i-feather class="icon-sm" [name]="tab.icon"></i-feather
+        ></span> -->
+        <span class="d-sm-block h-100">{{ tab.tabTitle }} </span>
+      </li>
+    </ul>
+  </div>
+  <ng-content></ng-content>
+</div>

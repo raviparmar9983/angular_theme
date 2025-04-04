@@ -1,0 +1,9 @@
+<div id="layout-wrapper">
+  <app-topbar (toggleMenu)="onMenuToggle($event)"></app-topbar>
+  <app-sidebar></app-sidebar>
+  <div class="main-container">
+    <div class="container-fluid p-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

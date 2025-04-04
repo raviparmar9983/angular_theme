@@ -1,0 +1,19 @@
+@import "./scss/variables";
+
+//structural
+@import "./scss/structure/layout";
+@import "./scss/structure/vertical";
+@import "./scss/structure/topbar";
+@import "./scss/structure/structure";
+
+//font awesome
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+//components
+@import "./scss/components/card";
+@import "./scss/components/nav";
+@import "./scss/components/form";
+
+@import "ag-grid-community/styles/ag-grid.css";
+@import "ag-grid-community/styles/ag-theme-material.css";
+@import "./scss/components/ag-grid";

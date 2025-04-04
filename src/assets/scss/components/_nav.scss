@@ -1,0 +1,37 @@
+.nav-tabs {
+  li {
+    color: $text-color-blue;
+    font-weight: $font-weight-medium;
+  }
+  border-bottom: none;
+}
+
+.nav-tabs-custom {
+  .nav-item {
+    position: relative;
+    min-width: 125px;
+    transition: all $transition-speed ease-in-out,
+      transform $transition-speed ease-in-out;
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      background: $hr-line-color;
+      bottom: 0px;
+      transition: all $transition-speed ease-in-out,
+        transform $transition-speed ease-in-out;
+    }
+    &:hover,
+    &.active {
+      color: $sidebar-menu-item-active-color;
+      &::after {
+        background: $sidebar-menu-item-active-color;
+        transform: scaleX(1);
+
+        border-radius: 2px 2px 0px 0px;
+      }
+    }
+  }
+}

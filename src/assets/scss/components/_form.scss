@@ -1,0 +1,60 @@
+@import "@ng-select/ng-select/themes/default.theme.css";
+.form-label {
+  color: $form-lable-color;
+  font-size: 13px;
+}
+.form-control,
+.ng-select-single .ng-select-container,
+.form-select {
+  border-radius: 15px;
+  color: $form-input-color;
+  border-color: $form-input-border;
+  height: 45px !important;
+  box-shadow: none !important;
+  &:focus {
+    box-shadow: none;
+  }
+  &::placeholder {
+    color: $form-input-color;
+  }
+
+  .ng-dropdown-panel {
+    border-radius: 15px;
+    color: $form-input-color;
+    border: 1px solid $form-input-border;
+    box-shadow: none !important;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .ng-dropdown-panel .ng-option {
+    padding: 8px 12px;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .ng-dropdown-panel .ng-option:hover,
+  .ng-dropdown-panel .ng-option.ng-option-selected {
+    background: lighten($form-input-border, 20%);
+    color: darken($form-input-color, 10%);
+  }
+}
+.ng-select.ng-select-opened.ng-select-bottom > .ng-select-container {
+  border-radius: 15px;
+  border-color: $form-input-border;
+}
+.ng-dropdown-panel.ng-select-bottom {
+  top: 110%;
+  border-color: #86b7fe;
+  border-radius: 15px;
+  z-index: 2;
+}
+.ng-dropdown-panel .ng-dropdown-panel-items {
+  margin: 5px;
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected,
+.ng-dropdown-panel
+  .ng-dropdown-panel-items
+  .ng-option.ng-option-selected.ng-option-marked {
+  border-radius: 15px;
+}
